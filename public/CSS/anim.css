@@ -1,0 +1,25 @@
+@keyframes yourAnimation {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        
+        opacity: 100;
+    }
+}
+
+@keyframes headSize {
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+
+@keyframes slideside {
+    0%{transform: translateX(-100%); height: 10rem; opacity: 0;}
+    100%{transform: translateX(0%); height: 50rem; opacity: 100;}
+}

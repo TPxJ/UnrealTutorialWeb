@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    user-select: none;
+}
+
+html{background-color: #020024;}
+
+h1{
+    animation: headSize 3s ease;
+    
+}
+
+.leftbar{
+    text-align: center;
+    float: left;
+    width: 20%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(15,17,41,1) 22%, rgba(27,30,69,1) 100%);
+    /* margin: 20px; */
+    height: 50rem;
+    animation: slideside 2s ease;
+
+}
+
+.leftbarreverse{
+    animation: buttonC 2s ease;
+}
+
+.leftbar h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.leftbar li{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.leftbar li:hover{
+    background-color: #191c41;
+}
+
+.leftbar li a{
+    text-decoration: none;
+}
+
+.leftbar li a:hover{
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: large;
+}
+
+.content{
+    margin: 0 20%;
+    width: 80%;
+}
+
+.text{
+    text-align: center;
+    margin: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    animation: yourAnimation 3s ease
+}
+img {
+    width: 100%;
+}
+
+.navleft li{
+    list-style-type: none;
+}
+
+#music{
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    background-color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: black;
+    user-select: none;
+}
+
+#music:hover{
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    background-color: rgb(160, 160, 160);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+#music:active{
+    position: fixed;
+    left: 95%;
+    top: 91%;
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+#audio{
+    float: left;
+    position: fixed;
+    left: 70%;
+    top: 88%;
+    display: none;
+}
+
+#getstart {
+    border-radius: 0.9rem;
+    padding: 1%;
+    background-color: #ffff;
+    margin: auto;
+    margin-top: 5%;
+    width: 15%;
+}
+
+#getstart a{
+    padding: 1%;
+    text-align: center;
+    color:#191c41;
+    font-weight:bolder;
+    text-decoration: none;
+    
+}
+
+#getstart:hover{
+    padding: 1%;
+    text-align: center;
+    color:#121430;
+    font-weight:bolder;
+    text-decoration: none;
+    background-color: rgb(110, 110, 110);
+    cursor: pointer;
+}

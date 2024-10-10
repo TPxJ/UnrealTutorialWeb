@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="background-color: #020024;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            user-select: none;
+        }
+        .buttonA{
+            border: 0px;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            background-color: #ffff;
+            width: auto;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .buttonA:hover {
+            border: 0px;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            background-color: rgb(116, 116, 116);
+            width: auto;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .form{
+            background-color: #191c41;
+            border: 0px;
+            height: 100px;
+            resize: none;
+            
+        }
+        #probut:hover{
+            color: rgb(116, 116, 116);
+            cursor: pointer;
+        }
+        #probut:active{
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            
+        }
+        .maincom{
+        }
+        .proimg{
+            margin: 2rem;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <span id="probut" style="position: fixed; top: 90%; left:3%; font-size:2rem; " class="material-icons">account_circle</span>
+
+    <div id="profile" style="display: none; background-color: #191c41; width: 20rem; text-align:center;position:fixed">
+        <h1>ข้อมูลส่วนตัว</h1>
+        <img style="border-radius: 10%;" id="img" src="" style="user-select: none;">
+        <p id="name"></p>
+        <p id="email"></p>
+        <p id="uid"></p>
+        <p id="email"></p>
+        <br><br>
+        <button class="buttonA" type="button" onclick="out()" style="margin-bottom: 1rem;">Sign Out</button>
+    </div>
+    <div>
+        <div style="text-align: center;">
+            <h2>FEEDBACK/COMMENT</h2>
+            <h3>For This Size</h3>
+        </div>
+
+        <div style="background-color: #191c41;; width: 80%; margin-left: auto; margin-right: auto; margin-bottom: 2rem; text-align: center;">
+            Comment / Feedback <br>
+            <textarea style="resize: none; width: 95%; background-color: #232549;border:0em; height: 5rem; outline: 0px; padding: 0.5rem;"></textarea>
+            <button class="buttonA" style="margin-left: auto; margin-right: auto; ; display: block;">SUBMIT</button>
+        </div>
+        <div class="maincom" style="background-color: #191c41;; width: 80%; margin-left: auto; margin-right: auto;">
+           <img class="proimg" src="https://images.unsplash.com/photo-1602428993559-814da78e1bf3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
+            <p></p>
+            
+        </div>
+    </div>
+   
+    
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="JS/firebase.js"></script>
+</body>
+</html>

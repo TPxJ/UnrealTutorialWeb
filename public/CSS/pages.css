@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    user-select: none;
+}
+
+h2{animation: headSize 3s ease;}
+
+html{background-color: #020024;}
+
+.divnav{height: 4rem ;width: 100%; background-color: #191c41; position: fixed; top:0; left: 0;}
+
+.divnav nav li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+    float: right;
+    margin-left: 2rem;
+}
+
+.homenav {
+    float: left;
+    width: 10%;
+}
+
+.content{
+    padding-top: 3rem;
+    /* margin-left: 20%; */
+}
+
+
+
+#text{
+    animation: yourAnimation 3s ease;
+    font-size: 1rem;
+}
+
+#content-in{
+    /* text-align: center; */
+    margin: 0px 10rem 0px 10rem;
+    margin: auto;
+    width: 50%;
+}
+
+#co p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.leftbar{
+    padding-top: 3rem;
+    margin-top: 0px;
+    text-align: center;
+    float: left;
+    width: 20%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(15,17,41,1) 22%, rgba(27,30,69,1) 100%);
+    /* margin: 20px; */
+    height: 50rem;
+    animation: slideside 2s ease;
+}
